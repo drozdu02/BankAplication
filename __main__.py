@@ -23,7 +23,7 @@ if __name__ == '__main__':
             client.register_client()
         elif choice == '2':
             client_id = input("Enter your client ID :")
-            client.client_login(client_id)
+            if not client.client_login(client_id): continue;
             while True:
                 print("\nLogged in as", client_id)
                 print("1. Check Balance")
