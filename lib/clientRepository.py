@@ -64,6 +64,8 @@ class ClientInterface(DataBase):
             else:
                 print("Invalid input. PIN reset aborted.")
                 return False
+
+        return False
                     
                 
     
